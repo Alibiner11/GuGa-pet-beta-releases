@@ -6,13 +6,13 @@
 
 | 文件 | 用途 | SHA-256 |
 | --- | --- | --- |
-| `GuGa Pet Host-0.1.0-arm64.dmg` | macOS 安装包 | `b80152b381638ecd854ba83973d494135e36d67fc65249d3e020b8d0d9cf336f` |
-| `GuGa Pet Host-0.1.0-arm64.dmg.sha256` | 完整性校验文件 | 与上列 DMG 对应 |
+| `GuGa.Pet.Host-0.1.0-arm64.dmg` | macOS 安装包 | `b80152b381638ecd854ba83973d494135e36d67fc65249d3e020b8d0d9cf336f` |
+| `GuGa.Pet.Host-0.1.0-arm64.dmg.sha256` | 完整性校验文件 | 与上列 DMG 对应 |
 
 在 macOS 终端中可运行：
 
 ```bash
-shasum -a 256 "GuGa Pet Host-0.1.0-arm64.dmg"
+shasum -a 256 "GuGa.Pet.Host-0.1.0-arm64.dmg"
 ```
 
 输出应与上表一致。
