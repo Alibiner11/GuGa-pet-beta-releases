@@ -1,4 +1,4 @@
-# GuGa Pet 内测范围与资源说明
+# GuGu Pet 内测范围与资源说明
 
 本说明适用于本仓库全部内测安装包和独立能力包；它是内测分发规则与资源提示，不替代第三方许可、法律意见或适用法律要求。
 
@@ -26,7 +26,7 @@
 
 ## 侵权反馈与处理
 
-如果你认为本内测包的内容侵害了你的合法权利，请通过本仓库 [Issues](https://github.com/Alibiner11/GuGa-pet-beta-releases/issues) 提交：
+如果你认为本内测包的内容侵害了你的合法权利，请通过本仓库 [Issues](https://github.com/Alibiner11/GuGu-pet-beta-releases/issues) 提交：
 
 1. 涉及内容的准确名称、版本、位置或截图；
 2. 可核验的权利证明或授权链；
