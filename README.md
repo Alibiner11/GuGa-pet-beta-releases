@@ -11,7 +11,7 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 ## 安装与首次配置
 
-1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 下载最新的 `GuGu Pet Host-*-arm64.dmg`。
+1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 下载最新的 `GuGu.Pet.Host-*-arm64.dmg`。
 2. 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”。安装前请阅读 DMG 内的“内测说明.md”。
 3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
 

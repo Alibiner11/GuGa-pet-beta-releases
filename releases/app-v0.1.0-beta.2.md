@@ -12,13 +12,13 @@
 
 | 文件 | 用途 | SHA-256 |
 | --- | --- | --- |
-| `GuGu Pet Host-0.1.0-beta.2-arm64.dmg` | macOS 安装包 | `58ca1e88e125ea18bbd299afb9b9d7d2c4531f92a2d483e70fc1bfc8e6d3dae1` |
-| `GuGu Pet Host-0.1.0-beta.2-arm64.dmg.sha256` | 完整性校验文件 | 与上列 DMG 对应 |
+| `GuGu.Pet.Host-0.1.0-beta.2-arm64.dmg` | macOS 安装包 | `58ca1e88e125ea18bbd299afb9b9d7d2c4531f92a2d483e70fc1bfc8e6d3dae1` |
+| `GuGu.Pet.Host-0.1.0-beta.2-arm64.dmg.sha256` | 完整性校验文件 | 与上列 DMG 对应 |
 
 在 macOS 终端中可运行：
 
 ```bash
-shasum -a 256 "GuGu Pet Host-0.1.0-beta.2-arm64.dmg"
+shasum -a 256 "GuGu.Pet.Host-0.1.0-beta.2-arm64.dmg"
 ```
 
 输出应与上表一致。
