@@ -1,4 +1,4 @@
-# GPT-SoVITS 音色克隆包 v0.1.0
+# GPT-SoVITS 音色克隆包 v0.1.0（macOS Apple Silicon）
 
 面向 GuGu Pet 内测的首个本地音色克隆引擎发布。
 
@@ -7,7 +7,16 @@
 - GPT-SoVITS V4：默认推荐的高质量音色克隆包。
 - GPT-SoVITS V2：少样本克隆兼容包。
 - 内置已调试的可搬迁 Python 运行时、引擎代码、中文前端模型与对应版本权重。
-- 仅支持 macOS Apple Silicon（`darwin-arm64`）。
+- 仅支持 macOS Apple Silicon（`darwin-arm64`，M 系列芯片）。
+
+## 直接下载
+
+每个版本必须下载同一版本的两个分片及其校验文件；不要改名、单独解压或混用 V2/V4。
+
+| 版本 | 分片 | 校验文件 |
+| --- | --- | --- |
+| V4（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
+| V2（兼容） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
 
 ## 使用方式
 

@@ -25,7 +25,7 @@ V2 与 V4 必须分别下载，不能互换。能力包不在主应用安装目�
   guga-gpt-sovits-v4-win32-x64.zip
 ```
 
-用户只需把对应 ZIP 及其 `.zip.000`、`.zip.001` 分片原样放入上述目录，然后在“设置 → 扩展与连接 → GPT-SoVITS”选择 V2 或 V4 并点击安装。应用会合并、校验、安装和启动已调试的运行时，不要求用户自行安装 Python、Conda、端口或调试服务。两个版本的独立包和 `.sha256` 校验文件发布在 [`v0.1.0`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0)；Windows 包资产准备完成后会追加到该 Release。
+用户只需把对应 ZIP 及其 `.zip.000`、`.zip.001` 分片原样放入上述目录，然后在“设置 → 扩展与连接 → GPT-SoVITS”选择 V2 或 V4 并点击安装。应用会合并、校验、安装和启动已调试的运行时，不要求用户自行安装 Python、Conda、端口或调试服务。Windows 包资产准备完成后会追加到 [`v0.1.0` 引擎 Release](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0)；在此之前，请勿下载或尝试导入 macOS 的 `darwin-arm64` 包。
 
 ## 功能边界
 

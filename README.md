@@ -44,7 +44,24 @@ GuGu Pet 仍处于持续完善的邀请制内测阶段。当前版本重点验�
 
 **PPT 工作台仍在完善中，当前内测版不会开放。** 点击任何 PPT 工作台入口只会显示等待后续更新的提示，不会打开工作台，也不会调用相关模型能力或产生此项功能的使用成本。
 
-GPT-SoVITS 音色克隆能力以独立包形式提供，不随主安装器重复捆绑。Windows 主应用暂不包含其运行时或模型权重；详见 [Windows 发布说明](./releases/windows/README.md)。
+## 音色克隆引擎：主应用之外的独立下载
+
+GPT-SoVITS 音色克隆能力不会随 Windows 或 macOS 主安装器重复捆绑。用户需要按自己的平台和版本单独下载已调试好的引擎包，再在应用内完成安装；这样主应用保持轻量，音色克隆所需的大体积运行时和模型也能独立更新。
+
+### macOS Apple Silicon（已提供）
+
+macOS M 系列芯片用户可从 [`v0.1.0` 引擎 Release](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0) 下载。每个版本都必须下载两个分片和对应校验文件，且不得改名或提前解压：
+
+| 版本 | 下载分片 | 校验文件 |
+| --- | --- | --- |
+| GPT-SoVITS V4（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
+| GPT-SoVITS V2（兼容） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
+
+下载后，将同一版本的两个分片原样放入应用数据目录下的 `voice-engine-packs/`，然后进入“设置 → 扩展与连接 → GPT-SoVITS”选择 V4 或 V2 并点击安装。应用会负责合并、校验、安装与启动本地服务，不要求用户自行安装 Python、Conda 或配置端口。详见 [macOS 引擎说明](./releases/gpt-sovits-v0.1.0.md)。
+
+### Windows 10/11 x64
+
+Windows 同样采用“主应用 + 独立引擎包”的方式；主安装器不包含 GPT-SoVITS 运行时或模型权重。Windows 包的命名、放置目录和安装步骤见 [Windows 发布说明](./releases/windows/README.md)。当前公开 Release 尚未附加 Windows GPT-SoVITS 大型能力包，因此请勿下载或混用 macOS 的 `darwin-arm64` 包；待 Windows 专用资产完成发布后会在该说明和 `v0.1.0` 引擎 Release 中提供直达链接。
 
 ## GuGu的未来
 
