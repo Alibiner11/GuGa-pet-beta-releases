@@ -1,15 +1,19 @@
-# Windows 发布目录
-
-这里记录 GuGu Pet Host 的 Windows x64 安装包，以及 Windows 专用的 GPT-SoVITS V2/V4 独立能力包约定。大文件作为 GitHub Release 资产发布，不提交到 Git 历史。
+# GuGu Pet Windows 发布说明
 
 ## 主应用
 
-- Release：[`v0.1.0-beta.3`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.3)
-- 安装器：`GuGu.Pet.Host-0.1.0-beta.3-x64.exe`
-- 校验：同名 `.sha256` 资产，安装前请核对 SHA-256。
-- 支持：Windows 10/11 x64。
+当前最新 Windows 安装包为 [`v0.1.0-beta.4`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.4)，仅支持 Windows 10/11 x64。
 
-主应用是纯净安装包：不含任何开发者 API Key、测试账号、聊天记录，也不含 GPT-SoVITS 的 Python 运行时、引擎代码或模型权重。宠物、Live2D 和本地识别资源按内测授权随应用提供。
+- [下载 Windows x64 安装器](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-x64.exe)
+- [下载 SHA-256 校验文件](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-x64.exe.sha256)
+
+主应用是纯净安装包：不包含开发者 API Key、测试账号、聊天记录，也不包含 GPT-SoVITS 的 Python 运行时、引擎代码或模型权重。宠物、Live2D 和本地识别资源按内测授权随应用提供。
+
+PowerShell 校验示例：
+
+```powershell
+Get-FileHash .\GuGu.Pet.Host-0.1.0-beta.4-x64.exe -Algorithm SHA256
+```
 
 ## GPT-SoVITS 独立能力包
 

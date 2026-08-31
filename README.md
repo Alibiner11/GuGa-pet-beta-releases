@@ -1,51 +1,66 @@
 # GuGu Pet Beta Releases
 
-GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用、独立能力包和其校验文件；不包含项目源码、开发机配置、测试记录、API Key、测试账号或任何用户数据。
+GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用、独立能力包及校验文件；不包含项目源码、开发机配置、API Key、测试账号、聊天记录或其他用户数据。
 
-## 当前发布渠道
+## 立即下载
 
-| 发布 | 适用平台 | 用途 | 状态 |
+请选择与设备匹配的安装包。当前最新版本为 `v0.1.0-beta.4`。
+
+| 平台 | 适用设备 | 直达下载 | 校验文件 |
 | --- | --- | --- | --- |
-| `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.4` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 最新 beta；PPT 工作台暂未开放 |
-| `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
+| Windows 10/11 x64 | 常见的 Intel / AMD 64 位 Windows 电脑 | [下载 Windows 安装器（.exe）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-x64.exe) | [SHA-256](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-x64.exe.sha256) |
+| macOS Apple Silicon（arm64） | M1、M2、M3、M4 及后续 M 系列芯片 Mac | [下载 macOS 安装包（.dmg）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg) | [SHA-256](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg.sha256) |
 
-## 安装与首次配置
+Intel Mac、Windows on ARM、Windows 32 位和 Linux 目前没有对应安装包。所有历史版本和说明可在 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 查看。
 
-1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 按系统下载最新的 macOS DMG 或 Windows x64 安装器。
-2. macOS 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”；Windows 运行 `GuGu.Pet.Host-*-x64.exe`。安装前请阅读随包的内测说明。
-3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
+## 安装与首次使用
 
-安装包不预置任何开发者密钥或用户配置。当前内测包未进行 Apple 开发者签名/公证；macOS 如出现安全提示，请在确认下载来源后通过 Finder 右键应用并选择“打开”。受组织管理的设备应遵循组织安全策略。
+### Windows 10/11 x64
 
-## 包含的内测资源
+1. 下载并运行上方的 `.exe` 安装器。
+2. 若系统出现未知发布者提示，请确认下载来源为本仓库后再继续；当前内测包尚未进行代码签名。
+3. 首次启动后，前往“设置 → 模型与 API”，填写并管理自己的 API、模型或第三方服务配置。
 
-应用包保留当前内测所需的运行资源：Live2D Cubism Core、Shizuku 与 Niziiro Mao 示例模型及其纹理/动作、本地语音与识别资源等。它们均为开发者在开发过程中用于功能验证的测试资源；本内测包保留它们的唯一目的，是让受邀测试用户可以直接体验、复现和反馈功能，并不构成商业素材授权、独立分发许可、再利用许可或其他用途的授权。GPT-SoVITS 音色克隆引擎不与主应用重复捆绑，用户可在应用的“扩展与连接”按需安装 V4（推荐）或 V2。
+### macOS Apple Silicon
 
-## 开发状态与已知范围
+1. 确认设备使用 M 系列芯片；本 DMG 不适用于 Intel Mac。
+2. 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”。
+3. 若 macOS 阻止首次启动，请确认下载来源后，在 Finder 中右键应用并选择“打开”。
 
-这是持续开发中的内测版本，并非正式生产版。核心桌宠、对话、设置/API 配置、本地能力安装和内测 Live2D 资源已随包交付；功能稳定性、兼容性、第三方服务适配、性能与交互仍会持续调整。
+安装包不预置开发者 API Key、测试账号或用户数据。安装前请阅读包内的“内测说明.md”。
 
-- 请勿将本版本用于医疗、紧急救援、金融决策、生产控制或其他高风险场景。
-- 第三方服务可用性、模型效果和响应时间由用户的网络、账号、服务商配额及本机环境共同决定。
-- 功能、资源或兼容平台可能在后续内测版本变化；重要数据请自行备份。
-- PPT 工作台仍在完善中，本阶段暂不开放；点击入口会提示等待后续更新，不会调用该功能。
-- Windows 安装包不包含 GPT-SoVITS 运行时或权重；主应用仅携带技能清单。
-- 发现问题请附 macOS 版本、芯片类型、应用版本、复现步骤和已脱敏日志；不要公开提交 API Key、聊天内容或个人资料。
+## 当前内测状态
 
-## 内测、商业与知识产权边界
+GuGu Pet 仍处于持续完善的邀请制内测阶段。当前版本重点验证跨平台桌宠体验、对话和任务协作、形象与交互呈现，以及用户自管模型配置下的稳定性。
 
-本仓库的安装包仅供受邀测试、体验和反馈。测试用户须遵守本内测规范：不得公开二次分发、销售、收费服务、品牌背书、反向工程、拆分提取、单独传播或将包内受保护资源用于内测体验与反馈之外的用途。GuGu 项目原创代码、名称、标识、界面和原创素材的权利归相应权利人所有；第三方软件、模型、字体和素材继续受其自身许可约束，相关许可优先于本仓库说明。
+已经随包交付的能力包括：
 
-Live2D 资源为当前内测验证保留，使用或公开发布前必须遵守 Live2D 的 [SDK 发布许可](https://www.live2d.com/en/sdk/license/) 与[示例素材许可](https://www.live2d.com/en/download/sample-data/)。项目方在公开商业化前应完成全部随包第三方资源的授权核验；未核验资源不得继续进入公开发行包。
+- 桌宠陪伴、对话、任务进度与待授权操作的呈现；
+- Windows 和 macOS Apple Silicon 的主应用安装包；
+- Live2D 测试形象、本地语音/识别等用于内测验证的运行资源；
+- 可由用户自行配置和管理的模型与第三方服务连接。
 
-完整内测边界、第三方资源说明与侵权反馈流程见 [内测范围与资源说明](./INTERNAL_BETA_SCOPE.md)。
+### 当前暂不开放
 
-## GPT-SoVITS 音色克隆包
+**PPT 工作台仍在完善中，当前内测版不会开放。** 点击任何 PPT 工作台入口只会显示等待后续更新的提示，不会打开工作台，也不会调用相关模型能力或产生此项功能的使用成本。
 
-`v0.1.0` 只提供已验真的 GPT-SoVITS V4（默认推荐）和 V2（兼容档）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+GPT-SoVITS 音色克隆能力以独立包形式提供，不随主安装器重复捆绑。Windows 主应用暂不包含其运行时或模型权重；详见 [Windows 发布说明](./releases/windows/README.md)。
 
-如需手动下载，请下载同一版本的 `.zip.000`、`.zip.001` 两个分片，原样放到应用数据目录的 `voice-engine-packs/`，然后在“扩展与连接”点击对应版本的安装按钮。每个 Release 都提供完整 ZIP 的 `.sha256` 校验文件。
+## 接下来的方向
 
-Windows 专项说明与目录约定见 [`releases/windows/`](./releases/windows/)。
+内测的目的不是仓促扩展功能，而是先把日常使用中最重要的体验打磨稳定。接下来会围绕以下方向持续迭代：
+
+- 提升 Windows 与 macOS 的安装、更新、兼容性和故障反馈体验；
+- 继续改善桌宠交互、角色形象、对话和任务协作的连贯性；
+- 在成本、稳定性和权限边界满足要求后，再以独立版本逐步开放 PPT 工作台；
+- 逐步完善本地能力包、资源许可核验、诊断信息和发布流程，让测试反馈能更快转化为可靠更新。
+
+这些是当前规划方向，不代表功能、时间或平台支持的承诺。每次开放范围会以对应 Release 说明为准。
+
+## 反馈、商业与资源边界
+
+请在提交反馈时附上系统版本、芯片或 CPU 类型、应用版本、复现步骤和已脱敏日志；不要公开 API Key、令牌、聊天内容或个人资料。
+
+本仓库的安装包仅供受邀测试、体验和反馈。不得用于商业销售、收费服务、公开二次分发、品牌背书、反向工程、拆分提取或将包内受保护资源用于内测体验与反馈以外的用途。GuGu 项目原创代码、名称、标识、界面和原创素材的权利归相应权利人所有；第三方软件、模型、字体和素材继续受各自许可约束。
+
+Live2D 及其他第三方资源只为当前内测验证保留；使用或公开商业化前须完成相应许可核验。完整范围、第三方资源说明与权利反馈流程请见 [内测范围与资源说明](./INTERNAL_BETA_SCOPE.md)。

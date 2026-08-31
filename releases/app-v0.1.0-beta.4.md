@@ -1,6 +1,11 @@
-# GuGu Pet Host macOS 内测版 v0.1.0-beta.4
+# GuGu Pet Host 跨平台内测版 v0.1.0-beta.4
 
-这是面向受邀测试用户的 macOS Apple Silicon（M 系列芯片、arm64）安装包；Intel Mac、Windows 和 Linux 不适用本文件。
+本版本同时提供 Windows 10/11 x64 与 macOS Apple Silicon（M 系列芯片、arm64）安装包。请只下载与设备匹配的文件；Intel Mac、Windows on ARM、Windows 32 位和 Linux 暂不适用。
+
+## 直接下载
+
+- [Windows x64 安装器](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-x64.exe)
+- [macOS Apple Silicon 安装包](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.4/GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg)
 
 ## 本次更新
 
@@ -9,29 +14,14 @@
 - 优化聊天文件结果卡片与轻量计划中的重命名参数处理。
 - PPT 工作台继续保持内测锁定；点击入口只会提示功能仍在完善中，不会打开工作台或调用相关能力。
 
-## 下载与校验
+## 校验
 
-| 文件 | 用途 | SHA-256 |
+| 平台 | 文件 | SHA-256 |
 | --- | --- | --- |
-| `GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg` | macOS Apple Silicon 安装包 | `dc6c91b8df09bad1100d34af33450c595fc75604f8d966161789789288a14c98` |
-| `GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg.sha256` | 完整性校验文件 | 与上列 DMG 对应 |
+| Windows x64 | `GuGu.Pet.Host-0.1.0-beta.4-x64.exe` | `9b428b21c4f4ec0ea042f004128402b23b0d63ac3cb0686ba167cc0ac192f12a` |
+| macOS arm64 | `GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg` | `dc6c91b8df09bad1100d34af33450c595fc75604f8d966161789789288a14c98` |
 
-在 macOS 终端中可运行：
-
-```bash
-shasum -a 256 "GuGu.Pet.Host-0.1.0-beta.4-arm64.dmg"
-```
-
-输出应与上表一致。
-
-## 安装与使用
-
-1. 确认设备为 Apple Silicon（M 系列芯片）Mac。
-2. 打开 DMG，将应用拖到“应用程序”目录。
-3. 安装前阅读 DMG 根目录的“内测说明.md”。
-4. 首次运行后进入“设置 → 模型与 API”，配置自己的 API Key、模型与第三方服务。
-
-本构建未使用 Apple 开发者签名/公证。若 macOS 阻止首次启动，请确认下载来源后在 Finder 中右键应用并选择“打开”。
+安装包不包含开发者 API Key、测试账号或用户数据。当前构建未进行代码签名或公证；仅在确认下载来源为本仓库后继续安装。
 
 ## 内测与资源边界
 
