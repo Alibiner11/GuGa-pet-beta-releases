@@ -4,8 +4,8 @@
 
 ## 内容
 
-- GPT-SoVITS V4：默认推荐的高质量音色克隆包。
-- GPT-SoVITS V2：少样本克隆兼容包。
+- GPT-SoVITS V2：macOS 内测推荐的音色克隆包。
+- GPT-SoVITS V4：可选试用的高质量音色克隆包；在 macOS 上不作为默认推荐。
 - 内置已调试的可搬迁 Python 运行时、引擎代码、中文前端模型与对应版本权重。
 - 仅支持 macOS Apple Silicon（`darwin-arm64`，M 系列芯片）。
 
@@ -15,12 +15,14 @@
 
 | 版本 | 分片 | 校验文件 |
 | --- | --- | --- |
-| V4（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
-| V2（兼容） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
+| V2（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
+| V4（谨慎试用） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
+
+> **macOS 用户请优先安装 V2。** V4 在 Mac 设备上会使用更多系统资源，可能导致设备性能下降，并使语音合成速度明显变慢。除非需要专门验证 V4，否则不推荐在 macOS 内测环境中使用。
 
 ## 使用方式
 
-在 GuGu Pet 的「设置 → 扩展与连接」选择 GPT-SoVITS V4 或 V2，点击安装即可。应用会自动下载、合并分片、校验平台、安装、接入并启动本地服务。
+在 GuGu Pet 的「设置 → 扩展与连接」选择 GPT-SoVITS V2（推荐）或 V4，点击安装即可。应用会自动下载、合并分片、校验平台、安装、接入并启动本地服务。
 
 如需手动下载，请下载同一版本的 `.zip.000` 与 `.zip.001` 两个分片，原样放到应用数据目录内的 `voice-engine-packs/`，随后在应用内点击安装。不要自行解压、改名或调整目录结构。
 

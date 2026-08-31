@@ -54,10 +54,12 @@ macOS M 系列芯片用户可从 [`v0.1.0` 引擎 Release](https://github.com/Al
 
 | 版本 | 下载分片 | 校验文件 |
 | --- | --- | --- |
-| GPT-SoVITS V4（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
-| GPT-SoVITS V2（兼容） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
+| GPT-SoVITS V2（推荐） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v2-darwin-arm64.zip.sha256) |
+| GPT-SoVITS V4（谨慎试用） | [`.zip.000`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.000) · [`.zip.001`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.001) | [`.sha256`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0/guga-gpt-sovits-v4-darwin-arm64.zip.sha256) |
 
-下载后，将同一版本的两个分片原样放入应用数据目录下的 `voice-engine-packs/`，然后进入“设置 → 扩展与连接 → GPT-SoVITS”选择 V4 或 V2 并点击安装。应用会负责合并、校验、安装与启动本地服务，不要求用户自行安装 Python、Conda 或配置端口。详见 [macOS 引擎说明](./releases/gpt-sovits-v0.1.0.md)。
+> **macOS 使用建议：优先选择 V2。** V4 在 Mac 上会占用更多设备资源，可能导致整体性能下降、语音合成等待时间明显变长；除非你有明确的 V4 测试需求，否则不建议在 macOS 内测环境中使用。
+
+下载后，将同一版本的两个分片原样放入应用数据目录下的 `voice-engine-packs/`，然后进入“设置 → 扩展与连接 → GPT-SoVITS”优先选择 V2 并点击安装。应用会负责合并、校验、安装与启动本地服务，不要求用户自行安装 Python、Conda 或配置端口。详见 [macOS 引擎说明](./releases/gpt-sovits-v0.1.0.md)。
 
 ### Windows 10/11 x64
 
