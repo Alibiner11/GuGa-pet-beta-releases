@@ -6,13 +6,14 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 | 发布 | 适用平台 | 用途 | 状态 |
 | --- | --- | --- | --- |
-| `v0.1.0-beta.4` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 仅适用于 M 系列芯片；PPT 工作台暂未开放 |
+| `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
+| `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
 | `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
 
 ## 安装与首次配置
 
-1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 下载最新的 `GuGu.Pet.Host-*-arm64.dmg`。
-2. 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”。安装前请阅读 DMG 内的“内测说明.md”。
+1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 按系统下载最新的 macOS DMG 或 Windows x64 安装器。
+2. macOS 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”；Windows 运行 `GuGu.Pet.Host-*-x64.exe`。安装前请阅读随包的内测说明。
 3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
 
 安装包不预置任何开发者密钥或用户配置。当前内测包未进行 Apple 开发者签名/公证；macOS 如出现安全提示，请在确认下载来源后通过 Finder 右键应用并选择“打开”。受组织管理的设备应遵循组织安全策略。
@@ -29,6 +30,7 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 - 第三方服务可用性、模型效果和响应时间由用户的网络、账号、服务商配额及本机环境共同决定。
 - 功能、资源或兼容平台可能在后续内测版本变化；重要数据请自行备份。
 - PPT 工作台仍在完善中，本阶段暂不开放；点击入口会提示等待后续更新，不会调用该功能。
+- Windows 安装包不包含 GPT-SoVITS 运行时或权重；主应用仅携带技能清单。
 - 发现问题请附 macOS 版本、芯片类型、应用版本、复现步骤和已脱敏日志；不要公开提交 API Key、聊天内容或个人资料。
 
 ## 内测、商业与知识产权边界
@@ -44,3 +46,5 @@ Live2D 资源为当前内测验证保留，使用或公开发布前必须遵守 
 `v0.1.0` 只提供已验真的 GPT-SoVITS V4（默认推荐）和 V2（兼容档）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
 
 如需手动下载，请下载同一版本的 `.zip.000`、`.zip.001` 两个分片，原样放到应用数据目录的 `voice-engine-packs/`，然后在“扩展与连接”点击对应版本的安装按钮。每个 Release 都提供完整 ZIP 的 `.sha256` 校验文件。
+
+Windows 专项说明与目录约定见 [`releases/windows/`](./releases/windows/)。
