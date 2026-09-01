@@ -8,7 +8,7 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 | --- | --- | --- | --- |
 | `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
 | `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.7` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 最新 beta；PPT 工作台暂未开放 |
+| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | Windows 10/11（x64） | [GuGu Pet Host 内测安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-x64.exe) | 最新 beta；PPT 工作台暂未开放 |
 | `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
 
 ## 安装与首次配置
@@ -44,7 +44,9 @@ Live2D 资源为当前内测验证保留，使用或公开发布前必须遵守 
 
 ## GPT-SoVITS 音色克隆包
 
-`v0.1.0` 只提供已验真的 GPT-SoVITS V4（默认推荐）和 V2（兼容档）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+`v0.1.0` 提供已验真的 GPT-SoVITS V2（macOS 推荐）和 V4（谨慎试用）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+
+> **macOS 使用建议：优先选择 V2。** V4 在 Mac 上会占用更多系统资源，可能造成设备性能下降，并让语音合成等待时间明显变长；除非需要专门验证 V4，否则不建议在 macOS 内测环境中使用。
 
 如需手动下载，请下载同一版本的 `.zip.000`、`.zip.001` 两个分片，原样放到应用数据目录的 `voice-engine-packs/`，然后在“扩展与连接”点击对应版本的安装按钮。每个 Release 都提供完整 ZIP 的 `.sha256` 校验文件。
 
