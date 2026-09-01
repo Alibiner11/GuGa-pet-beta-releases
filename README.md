@@ -6,15 +6,14 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 | 发布 | 适用平台 | 用途 | 状态 |
 | --- | --- | --- | --- |
-| `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | Windows 10/11（x64） | [GuGu Pet Host 内测安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-x64.exe) | 最新 beta；PPT 工作台暂未开放 |
-| `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
+| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | macOS Apple Silicon（M 系列芯片，arm64） | [GuGu Pet Host 安装包（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg) | 当前 macOS 最新内测包；PPT 工作台暂未开放 |
+| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | Windows 10/11（x64） | [GuGu Pet Host 安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-x64.exe) | 当前 Windows 最新内测包；PPT 工作台暂未开放 |
+| [`v0.1.0`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0) | macOS Apple Silicon（M 系列芯片，arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 独立下载后在应用内安装 |
 
 ## 安装与首次配置
 
-1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 按系统下载最新的 macOS DMG 或 Windows x64 安装器。
-2. macOS 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”；Windows 运行 `GuGu.Pet.Host-*-x64.exe`。安装前请阅读随包的内测说明。
+1. **macOS Apple Silicon**：下载 `.dmg`，打开后将 `GuGu Pet Host.app` 拖入“应用程序”。该包仅适用于 M 系列芯片 Mac，不适用于 Intel Mac。
+2. **Windows 10/11 x64**：下载 `.exe` 并运行安装器。该包适用于常见 Intel / AMD 64 位 Windows 设备，不适用于 Windows on ARM 或 32 位 Windows。
 3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
 
 安装包不预置任何开发者密钥或用户配置。当前内测包未进行 Apple 开发者签名/公证；macOS 如出现安全提示，请在确认下载来源后通过 Finder 右键应用并选择“打开”。受组织管理的设备应遵循组织安全策略。
