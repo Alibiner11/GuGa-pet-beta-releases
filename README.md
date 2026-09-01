@@ -6,14 +6,13 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 | 发布 | 适用平台 | 用途 | 状态 |
 | --- | --- | --- | --- |
-| `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.6` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 最新 beta；PPT 工作台暂未开放 |
+| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | macOS Apple Silicon（arm64） | [GuGu Pet Host 内测安装包（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg) | 最新 macOS beta；PPT 工作台暂未开放 |
+| [`v0.1.0-beta.6`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.6) | Windows 10/11（x64） | [GuGu Pet Host 内测安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.6/GuGu.Pet.Host-0.1.0-beta.6-x64.exe) | 最新 Windows beta；PPT 工作台暂未开放 |
 | `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
 
 ## 安装与首次配置
 
-1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 按系统下载最新的 macOS DMG 或 Windows x64 安装器。
+1. 直接下载与你的设备匹配的最新安装包：macOS Apple Silicon 请使用 [`beta.7 DMG`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg)，Windows 10/11 x64 请使用 [`beta.6 EXE`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.6/GuGu.Pet.Host-0.1.0-beta.6-x64.exe)。
 2. macOS 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”；Windows 运行 `GuGu.Pet.Host-*-x64.exe`。安装前请阅读随包的内测说明。
 3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
 
@@ -21,7 +20,7 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 ## 包含的内测资源
 
-应用包保留当前内测所需的运行资源：Live2D Cubism Core、Shizuku 与 Niziiro Mao 示例模型及其纹理/动作、本地语音与识别资源等。它们均为开发者在开发过程中用于功能验证的测试资源；本内测包保留它们的唯一目的，是让受邀测试用户可以直接体验、复现和反馈功能，并不构成商业素材授权、独立分发许可、再利用许可或其他用途的授权。GPT-SoVITS 音色克隆引擎不与主应用重复捆绑，用户可在应用的“扩展与连接”按需安装 V4（推荐）或 V2。
+应用包保留当前内测所需的运行资源：Live2D Cubism Core、Shizuku 与 Niziiro Mao 示例模型及其纹理/动作、本地语音与识别资源等。它们均为开发者在开发过程中用于功能验证的测试资源；本内测包保留它们的唯一目的，是让受邀测试用户可以直接体验、复现和反馈功能，并不构成商业素材授权、独立分发许可、再利用许可或其他用途的授权。GPT-SoVITS 音色克隆引擎不与主应用重复捆绑，用户可在应用的“扩展与连接”按需安装；macOS 用户优先选择 V2，V4 仅供谨慎试用。
 
 ## 开发状态与已知范围
 
@@ -44,7 +43,9 @@ Live2D 资源为当前内测验证保留，使用或公开发布前必须遵守 
 
 ## GPT-SoVITS 音色克隆包
 
-`v0.1.0` 只提供已验真的 GPT-SoVITS V4（默认推荐）和 V2（兼容档）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+`v0.1.0` 提供已验真的 GPT-SoVITS V2（macOS 推荐）和 V4（谨慎试用）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+
+> **macOS 使用建议：优先选择 V2。** V4 在 Mac 上会占用更多系统资源，可能造成设备性能下降，并让语音合成等待时间明显变长；除非需要专门验证 V4，否则不建议在 macOS 内测环境中使用。
 
 如需手动下载，请下载同一版本的 `.zip.000`、`.zip.001` 两个分片，原样放到应用数据目录的 `voice-engine-packs/`，然后在“扩展与连接”点击对应版本的安装按钮。每个 Release 都提供完整 ZIP 的 `.sha256` 校验文件。
 
