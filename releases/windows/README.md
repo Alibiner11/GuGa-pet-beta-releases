@@ -4,8 +4,8 @@
 
 ## 主应用
 
-- Release：[`v0.1.0-beta.6`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.6)
-- 安装器：`GuGu.Pet.Host-0.1.0-beta.6-x64.exe`
+- Release：[`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7)
+- 安装器：`GuGu.Pet.Host-0.1.0-beta.7-x64.exe`
 - 校验：同名 `.sha256` 资产，安装前请核对 SHA-256。
 - 支持：Windows 10/11 x64。
 
