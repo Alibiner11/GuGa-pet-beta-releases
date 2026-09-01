@@ -8,7 +8,7 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 | --- | --- | --- | --- |
 | `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
 | `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
-| `v0.1.0-beta.4` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 最新 beta；PPT 工作台暂未开放 |
+| `v0.1.0-beta.6` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 最新 beta；PPT 工作台暂未开放 |
 | `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
 
 ## 安装与首次配置
