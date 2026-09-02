@@ -13,6 +13,8 @@
 
 ## GPT-SoVITS 独立能力包
 
+Windows GPT-SoVITS 独立包请使用 [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) Release；macOS 的 `v0.1.0` Release 不适用于 Windows。
+
 V2 与 V4 必须分别下载，不能互换。能力包不在主应用安装目录中，安装位置由应用自动管理：
 
 ```text
