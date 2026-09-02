@@ -14,7 +14,7 @@ GuGu Pet 的公开邀请制内测发布仓库。这里提供安装包、独立�
 
 ### macOS Apple Silicon（M 系列芯片）
 
-1. 下载并安装 [GuGu Pet Host beta.7（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg)。需要校验时下载对应 [SHA-256 文件](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg.sha256)。
+1. 下载并安装 [GuGu Pet Host beta.8（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.8-macos-arm64/GuGu.Pet.Host-0.1.0-beta.8-arm64.dmg)。需要校验时下载对应 [SHA-256 文件](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.8-macos-arm64/GuGu.Pet.Host-0.1.0-beta.8-arm64.dmg.sha256)。
 2. 如需音色克隆，再按 [macOS 音色克隆下载与安装说明](./releases/macos/README.md) 下载同一版本的全部分片。**优先选择 V2**；V4 在 Mac 上资源占用更高，可能造成性能下降和合成变慢。
 
 ### Windows 10/11 x64（Intel / AMD）

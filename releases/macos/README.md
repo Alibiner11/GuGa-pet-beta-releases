@@ -4,7 +4,7 @@
 
 ## 1. 安装 GuGu Pet Host
 
-下载 [beta.7 macOS 安装包（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg)，并用 [SHA-256 文件](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg.sha256) 校验。打开 DMG 后，将 `GuGu Pet Host.app` 拖入“应用程序”。
+下载 [beta.8 macOS 安装包（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.8-macos-arm64/GuGu.Pet.Host-0.1.0-beta.8-arm64.dmg)，并用 [SHA-256 文件](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.8-macos-arm64/GuGu.Pet.Host-0.1.0-beta.8-arm64.dmg.sha256) 校验。打开 DMG 后，将 `GuGu Pet Host.app` 拖入“应用程序”。
 
 ## 2. 按需安装 GPT-SoVITS 音色克隆包
 
