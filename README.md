@@ -6,21 +6,22 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 
 | 发布 | 适用平台 | 用途 | 状态 |
 | --- | --- | --- | --- |
-| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | macOS Apple Silicon（M 系列芯片，arm64） | [GuGu Pet Host 安装包（DMG）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg) | 当前 macOS 最新内测包；PPT 工作台暂未开放 |
-| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | Windows 10/11（x64） | [GuGu Pet Host 安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-x64.exe) | 当前 Windows 最新内测包；PPT 工作台暂未开放 |
-| [`v0.1.0`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0) | macOS Apple Silicon（M 系列芯片，arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 独立下载后在应用内安装 |
+| `v0.1.0-beta.3` | macOS Apple Silicon（arm64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
+| `v0.1.0-beta.3` | Windows 10/11（x64） | GuGu Pet Host 内测安装包 | 受邀内测，持续完善中；PPT 工作台暂未开放 |
+| [`v0.1.0-beta.7`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-beta.7) | Windows 10/11（x64） | [GuGu Pet Host 内测安装包（EXE）](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/download/v0.1.0-beta.7/GuGu.Pet.Host-0.1.0-beta.7-x64.exe) | 最新 beta；PPT 工作台暂未开放 |
+| `v0.1.0` | macOS Apple Silicon（arm64） | GPT-SoVITS V2/V4 音色克隆引擎包 | 供应用内按需安装 |
 
 ## 安装与首次配置
 
-1. **macOS Apple Silicon**：下载 `.dmg`，打开后将 `GuGu Pet Host.app` 拖入“应用程序”。该包仅适用于 M 系列芯片 Mac，不适用于 Intel Mac。
-2. **Windows 10/11 x64**：下载 `.exe` 并运行安装器。该包适用于常见 Intel / AMD 64 位 Windows 设备，不适用于 Windows on ARM 或 32 位 Windows。
+1. 从 [Releases](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases) 按系统下载最新的 macOS DMG 或 Windows x64 安装器。
+2. macOS 打开 DMG，将 `GuGu Pet Host.app` 拖入“应用程序”；Windows 运行 `GuGu.Pet.Host-*-x64.exe`。安装前请阅读随包的内测说明。
 3. 首次打开进入“设置 → 模型与 API”，由用户自行填写和管理自己的 API、模型或第三方账号配置。
 
 安装包不预置任何开发者密钥或用户配置。当前内测包未进行 Apple 开发者签名/公证；macOS 如出现安全提示，请在确认下载来源后通过 Finder 右键应用并选择“打开”。受组织管理的设备应遵循组织安全策略。
 
 ## 包含的内测资源
 
-应用包保留当前内测所需的运行资源：Live2D Cubism Core、Shizuku 与 Niziiro Mao 示例模型及其纹理/动作、本地语音与识别资源等。它们均为开发者在开发过程中用于功能验证的测试资源；本内测包保留它们的唯一目的，是让受邀测试用户可以直接体验、复现和反馈功能，并不构成商业素材授权、独立分发许可、再利用许可或其他用途的授权。GPT-SoVITS 音色克隆引擎不与主应用重复捆绑；macOS 用户可在应用的“扩展与连接”按需安装，优先选择 V2，V4 仅供谨慎试用。
+应用包保留当前内测所需的运行资源：Live2D Cubism Core、Shizuku 与 Niziiro Mao 示例模型及其纹理/动作、本地语音与识别资源等。它们均为开发者在开发过程中用于功能验证的测试资源；本内测包保留它们的唯一目的，是让受邀测试用户可以直接体验、复现和反馈功能，并不构成商业素材授权、独立分发许可、再利用许可或其他用途的授权。GPT-SoVITS 音色克隆引擎不与主应用重复捆绑，用户可在应用的“扩展与连接”按需安装 V4（推荐）或 V2。
 
 ## 开发状态与已知范围
 
@@ -33,76 +34,6 @@ GuGu Pet 的公开内测发布仓库。这里仅发布可安装的内测应用�
 - Windows 安装包不包含 GPT-SoVITS 运行时或权重；主应用仅携带技能清单。
 - 发现问题请附 macOS 版本、芯片类型、应用版本、复现步骤和已脱敏日志；不要公开提交 API Key、聊天内容或个人资料。
 
-## GuGu的未来
-
-GuGu Pet 想探索的是一种更有温度、也更有边界感的个人 AI 陪伴体验：可爱的桌面形象只是现在最自然的入口，真正重要的是它能在陪伴、对话和做事之间保持同一份连续性。
-
-我们希望它逐步做到：
-
-- **像同一个伙伴一样相处**：有稳定的角色特质、记忆与当下状态，而不是每次对话都重新开始；
-- **既能陪伴，也能把事做明白**：从闲聊、日程、文件和任务协作开始，结果以真实执行和明确反馈为准；
-- **亲近但不越界**：用户始终能看见、纠正和管理自己的资料、记忆与授权，不以情感话术要求依赖、内疚或持续使用；
-- **让表达和行动一致**：角色的文字、语音、表情、动作和任务进度应服务于同一个真实情境，而不是只做热闹的表演。
-
-这里所说的“数字生命”是对连续角色体验的产品目标，不是对机器具有生物意识、真实痛苦或人格主体的宣称。我们更在乎它是否诚实、是否尊重用户边界、是否能在长期使用中可靠地成为一个有帮助的伙伴。
-
-### 长期的想象
-
-桌面端是 GuGu Pet 的起点，而不是边界。随着核心体验趋于稳定，我们期待把同一套“陪伴 + 能力 + 用户自主权”的原则延伸到更多生活场景：在手机或平板上延续上下文，在家居与日程中提供经过授权的协助，在学习、创作、游戏和日常整理中成为更自然的参与者。
-
-这不是要把每个场景都塞进一个产品，而是希望用户无论在哪一种生活节奏里，都能拥有一个可信、可控、会持续变好的陪伴入口。任何跨设备、家居或新能力的扩展，都应在隐私、权限、可靠性和实际价值被验证后再开放。
-
-## 界面演示
-
-以下截图来自 macOS Apple Silicon 内测环境，用于展示当前桌宠、交互与设置能力的实际界面。画面中的模型、账号和本地内容仅作演示；具体可用能力以对应 Release 说明为准。
-
-### 陪伴与对话入口
-
-桌面形象、自然语言输入和常用任务建议可以在同一入口中呈现。
-
-![GuGu Pet 的陪伴与对话入口](./assets/showcase/01-welcome-chat.png)
-
-### 语音交互反馈
-
-桌宠可展示语音聆听与反馈状态；语音相关能力取决于用户本机安装的能力包和自行配置的服务。
-
-![GuGu Pet 的语音交互反馈](./assets/showcase/02-voice-interaction.png)
-
-### 快捷能力面板
-
-日记、任务中心、截图、文案优化和灵感中心等入口集中展示。PPT 工作台入口虽会显示，但当前内测版仍处于锁定状态，点击后只会提示等待后续更新。
-
-![GuGu Pet 的快捷能力面板](./assets/showcase/03-quick-actions.png)
-
-### 宠物角色管理
-
-角色页面用于集中管理形象、资料、人格表达、状态动画与桌面尺寸等展示参数。
-
-![GuGu Pet 的宠物角色管理界面](./assets/showcase/04-pet-character.png)
-
-### 模型与接口配置
-
-用户可以在设置中查看和管理聊天、图像生成、视觉识别、语音合成等能力连接；服务可用性和成本由用户自行配置的服务决定。
-
-![GuGu Pet 的模型与接口配置界面](./assets/showcase/05-model-connections.png)
-
-### 日记与长期陪伴记录
-
-日记页面展示陪伴过程中的本地记录形态。用户应始终能够管理自己的资料、记忆与授权。
-
-![GuGu Pet 的日记界面](./assets/showcase/06-diary.png)
-
-## 接下来的方向
-
-内测的目的不是仓促扩展功能，而是先把日常使用中最重要的体验打磨稳定。接下来会围绕以下方向持续迭代：
-
-- 提升 Windows 与 macOS 的安装、更新、兼容性和故障反馈体验；
-- 继续改善桌宠交互、角色形象、对话和任务协作的连贯性；
-- 在成本、稳定性和权限边界满足要求后，再以独立版本逐步开放 PPT 工作台；
-- 逐步完善本地能力包、资源许可核验、诊断信息和发布流程，让测试反馈能更快转化为可靠更新。
-
-这些是当前规划方向，不代表功能、时间或平台支持的承诺。每次开放范围会以对应 Release 说明为准。
-
 ## 内测、商业与知识产权边界
 
 本仓库的安装包仅供受邀测试、体验和反馈。测试用户须遵守本内测规范：不得公开二次分发、销售、收费服务、品牌背书、反向工程、拆分提取、单独传播或将包内受保护资源用于内测体验与反馈之外的用途。GuGu 项目原创代码、名称、标识、界面和原创素材的权利归相应权利人所有；第三方软件、模型、字体和素材继续受其自身许可约束，相关许可优先于本仓库说明。
@@ -113,7 +44,14 @@ Live2D 资源为当前内测验证保留，使用或公开发布前必须遵守 
 
 ## GPT-SoVITS 音色克隆包
 
-`v0.1.0` 提供已验真的 GPT-SoVITS V2（macOS 推荐）和 V4（谨慎试用）。每个包由两个 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
+`v0.1.0` 仅提供 macOS Apple Silicon（`darwin-arm64`）的 GPT-SoVITS V2/V4。Windows 10/11 x64 使用独立的 [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) Release。两者的运行时、依赖和分片不能互换；应用会按系统选择对应下载地址。
+
+| 平台 | Release | 平台标识 |
+| --- | --- | --- |
+| macOS Apple Silicon | [`v0.1.0`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0) | `darwin-arm64` |
+| Windows 10/11 x64 | [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) | `win32-x64` |
+
+每个包由对应数量的 ZIP 分片组成；应用会自动下载、拼接、校验、安装并启动，不需要用户安装 Python、Conda 或配置端口。
 
 > **macOS 使用建议：优先选择 V2。** V4 在 Mac 上会占用更多系统资源，可能造成设备性能下降，并让语音合成等待时间明显变长；除非需要专门验证 V4，否则不建议在 macOS 内测环境中使用。
 
