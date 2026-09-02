@@ -31,6 +31,6 @@ shasum -a 256 GuGu.Pet.Host-0.1.0-beta.7-arm64.dmg
 
 PPT 工作台暂不开放。点击入口只会显示“PPT 工作台还在完善中，敬请等待后续更新”，不会打开工作台或调用 PPT 能力。
 
-两个主安装包均不包含 GPT-SoVITS 音色克隆的运行时或模型权重。当前公开引擎包仅支持 macOS Apple Silicon；macOS 用户应在“设置 → 扩展与连接”按需安装并优先选择 V2。V4 会占用更多系统资源，可能造成设备性能下降、语音合成速度明显变慢，仅建议在有专门测试需求时试用。Windows 用户请勿导入 macOS 的 `darwin-arm64` 引擎包。
+两个主安装包均不包含 GPT-SoVITS 音色克隆的运行时或模型权重。macOS 用户应下载 [`v0.1.0`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0) 中的 `darwin-arm64` 包，并优先选择 V2；V4 会占用更多系统资源，可能造成设备性能下降、语音合成速度明显变慢，仅建议在有专门测试需求时试用。Windows 用户应下载 [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) 中的 `win32-x64` 包，不能导入 macOS 的 `darwin-arm64` 引擎包。
 
 本版本仅限受邀测试、体验和反馈，不可用于商业销售、收费服务、公开再分发、反向工程或单独提取/传播包内受保护资源。安装包不包含开发者 API Key、测试账号或用户数据；Live2D 和其他第三方资源继续受各自许可约束。

@@ -1,6 +1,6 @@
 # GPT-SoVITS Windows 能力包说明
 
-Windows x64 的 GPT-SoVITS V2 和 V4 是两个独立能力包，分别打包、分别校验、分别安装，统一发布在独立的 [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) Release。它们不属于 GuGu Pet 主应用安装器，也不能与 macOS `v0.1.0` Release 中的资产混用。
+Windows x64 的 GPT-SoVITS V2 和 V4 是两个独立能力包，分别打包、分别校验、分别安装，统一发布在独立的 [`v0.1.0-windows`](https://github.com/Alibiner11/GuGu-pet-beta-releases/releases/tag/v0.1.0-windows) Release。它们不属于 GuGu Pet 主应用安装器，也不能与 macOS `v0.1.0` Release 中的资产混用。完整的 Windows 分片直达链接和安装步骤见 [Windows 下载与安装说明](https://github.com/Alibiner11/GuGu-pet-beta-releases/blob/main/releases/windows/README.md)。
 
 每个版本的发布资产命名如下：
 
